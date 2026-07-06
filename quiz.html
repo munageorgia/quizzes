@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MUNA Georgia — South Zone Knowledge Test</title>
+<title>MUNA Georgia — Quizzes</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700&display=swap');
 
@@ -68,6 +68,11 @@
   }
   .star{
     width:46px; height:46px;
+    margin-bottom:10px;
+  }
+  .logo-img{
+    width:64px; height:64px;
+    object-fit:contain;
     margin-bottom:10px;
   }
   .brand h1{
@@ -274,7 +279,9 @@
 
 <div class="wrap">
   <div class="brand">
-    <svg class="star" viewBox="0 0 100 100" fill="none">
+    <img src="logo.png" alt="MUNA Georgia" class="logo-img" id="logoImg"
+         onerror="this.style.display='none'; document.getElementById('fallbackStar').style.display='block';">
+    <svg class="star" viewBox="0 0 100 100" fill="none" id="fallbackStar" style="display:none;">
       <path d="M50 4 L58 34 L88 34 L64 52 L72 82 L50 64 L28 82 L36 52 L12 34 L42 34 Z" fill="#c9a24b"/>
     </svg>
     <h1>MUNA Georgia</h1>
